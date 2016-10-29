@@ -38,8 +38,8 @@ cacheSolve <- function(x, ...) {
         }
         
         # else  calculate the inverse of a matrix 
-        get.data = x$get()
-        invert = solve(get.data, ...)
+        get.data <- x$get()
+        invert <- solve(get.data, ...)
         
         # set the value of the inverse in the cache
         x$setinv(invert)
